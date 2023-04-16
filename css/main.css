@@ -21,7 +21,7 @@ body{
 h1, h2, h3, h4, p, ul{
 	margin: 0;
 	padding: 0;
-	font-weight: 400;
+	
 }
 
 img{
@@ -80,25 +80,4 @@ button{
 }
 .svg-email{
 	fill:#574E56; 
-}
-/* navigation */
-.header-top{
-	height: 70px;
-	padding-top: 30px;
-	background-color: #fff;
-	
-}
-.header-menu a +a {
-	margin-left: 40px;
-}
-
-.header-center{
-	background-color: #f9f8f6;
-	padding-top: 193px;
-}
-.header-title{
-	max-width: 463px;
-}
-.header-title  .h1{
-	margin-bottom: 10px;
 }
