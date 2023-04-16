@@ -1,0 +1,104 @@
+/* font-family: 'Lora', serif;
+font-family: 'Roboto', sans-serif; */
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-family: 14px;
+	line-height: 1.3;
+}
+.container{
+	width:1270px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+h1, h2, h3, h4, p, ul{
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+button{
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	display: inline-block;
+}
+/* =====typografy=== */
+
+.h1, .h2{
+	font-family: 'Lora', serif;
+	font-size: 80px;
+	line-height: 102px;
+	color: #574E56;
+}
+
+.h2{
+	font-size: 40px;
+	line-height: 51px;
+}
+.text-upper{
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.06em;
+	color: #574E56;
+}
+/* ====svg icons ===== */
+.svg-arrow{
+	width: 12px;
+	height: 14px;
+	fill:white; 
+}
+.svg-email,
+.svg-be, 
+.svg-inst,
+.svg-phone,
+.svg-pin,
+.svg-map{
+	width: 24px;
+	height: 24px;
+	fill: #000000;
+}
+.svg-email{
+	fill:#574E56; 
+}
+/* navigation */
+.header-top{
+	height: 70px;
+	padding-top: 30px;
+	background-color: #fff;
+	
+}
+.header-menu a +a {
+	margin-left: 40px;
+}
+
+.header-center{
+	background-color: #f9f8f6;
+	padding-top: 193px;
+}
+.header-title{
+	max-width: 463px;
+}
+.header-title  .h1{
+	margin-bottom: 10px;
+}
