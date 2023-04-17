@@ -89,6 +89,7 @@ button{
 .header{
 	height: 800px;
 	background-color: #f9f8f6;
+	position: relative;
 }
 .header-top{
 	height: 70px;
@@ -169,4 +170,15 @@ button{
 }
 .start-video:hover  p{
 	color: #f1971b;
+}
+/* header slider */
+
+.header-slider{
+	width: 50%;
+	max-width: 690px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom:0;
+	z-index: 2;
 }
