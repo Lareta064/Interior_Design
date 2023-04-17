@@ -10,6 +10,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-family: 14px;
 	line-height: 1.3;
+	color: #000000;
 }
 .container{
 	width:1270px;
@@ -21,6 +22,7 @@ body{
 h1, h2, h3, h4, p, ul{
 	margin: 0;
 	padding: 0;
+	font-weight: 400;
 	
 }
 
@@ -34,6 +36,7 @@ ul{
 }
 a{
 	text-decoration: none;
+	color: #000000;
 }
 button{
 	cursor: pointer;
@@ -80,4 +83,90 @@ button{
 }
 .svg-email{
 	fill:#574E56; 
+}
+/* HEADER */
+
+.header{
+	height: 800px;
+	background-color: #f9f8f6;
+}
+.header-top{
+	height: 70px;
+	background-color: #fff;
+	padding-top: 30px;
+}
+
+.header-nav a + a{
+	margin-left: 40px;
+}
+.header-nav a:hover{
+	color: #F6D5A7;
+}
+.header-nav a{
+	position: relative;
+	transition: 0.5s;
+}
+.header-nav a:before{
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: #F6D5A7;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transition: 0.5s;
+}
+.header-nav  a:hover:before{
+	width: 100%;
+}
+
+.header-content{
+	padding-top: 193px;
+}
+.header-title{
+	max-width: 463px;
+	margin-bottom: 127px;
+}
+.header-title .h1{
+	margin-bottom: 10px;
+}
+
+.start-video{
+	display: flex;
+	align-items:center;
+	cursor:pointer;
+}
+.start-video img{
+	transition: 0.5s;
+}
+.start-video__btn{
+	width: 78px;
+	height: 78px;
+	border-radius:50%;
+	background-color: #F6D5A7;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	transition: 0.5s;
+}
+.start-video__btn  svg{
+	transform: rotate(180deg);
+}
+.start-video__text{
+	display: flex;
+	align-items:center;
+	column-gap:23px;
+	left: -39px;
+	position: relative;
+}
+.start-video__text p{max-width: 170px; transition: 0.5s;}
+
+.start-video:hover img{
+	filter: grayscale(1);
+} 
+.start-video:hover .start-video__btn {
+	background-color: #f1971b;
+}
+.start-video:hover  p{
+	color: #f1971b;
 }
