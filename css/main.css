@@ -90,6 +90,7 @@ button{
 	height: 800px;
 	background-color: #f9f8f6;
 	position: relative;
+
 }
 .header-top{
 	height: 70px;
@@ -133,6 +134,7 @@ button{
 }
 
 .start-video{
+	width: fit-content;
 	display: flex;
 	align-items:center;
 	cursor:pointer;
@@ -171,14 +173,55 @@ button{
 .start-video:hover  p{
 	color: #f1971b;
 }
-/* header slider */
-
-.header-slider{
+.header-slider-wrapper{
 	width: 50%;
 	max-width: 690px;
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom:0;
+	top:0;
+	right:0;
+	bottom: 0;
+	background-color: #F6D5A7;
+}
+.header-slider-wrapper img{
+	width: 100px;
+	height: 800px;
+	object-fit: cover;
+}
+.owl-dot span{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	border-radius:50%;
+	background-color: #c4c4c4;
+}
+.owl-dots  button.owl-dot.active span{
+	background-color: #fff;
+	
+}
+.owl-dot  + .owl-dot{
+	margin-left: 9px; 
+}
+.header-slider-wrapper .owl-dots{
+	position: absolute;	
+	left: 48px;
+	bottom: 49px;
 	z-index: 2;
+}
+
+.header-slider__nav{
+	position: absolute;
+	bottom: 35px;
+	right: 81px;
+	z-index: 2;
+}
+.slider-next, .slider-prev{
+	width: 64px;
+	height: 62px;
+	border:1px solid #ffffff;
+}
+.slider-next{
+	margin-right: 15px;
+}
+.slider-prev svg{
+	transform: rotate(180deg);
 }
