@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+ 	/* ======  header-slider   =======*/
   $(".header-slider").owlCarousel({
 
 	items: 1,
@@ -15,6 +16,11 @@ $(document).ready(function(){
 	
 	$('.slider-prev').click(function() {
 		$(".header-slider").trigger('prev.owl.carousel');
+	});
+
+	/* ==== Fancybox ===== */
+	Fancybox.bind("[data-fancybox]", {
+	thumb: false,
 	});
 
 });
