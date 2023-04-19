@@ -19,9 +19,16 @@ $(document).ready(function(){
 	});
 
 	/* ==== Fancybox ===== */
-	Fancybox.bind("[data-fancybox]", {
-	thumb: false,
+	Fancybox.bind('[data-fancybox]', {
+		 Thumbs: false,
+		 Toolbar: {
+			display: {
+			left: [],
+			middle: [],
+			right: [ "close"],
+			},
+		},
 	});
 
+	
 });
-
